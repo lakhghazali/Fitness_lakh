@@ -1,16 +1,17 @@
-# fitness_lakh
+# Fitness App - Flutter UI
 
-A new Flutter project.
+**Packages we are using:**
 
-## Getting Started
+- cached_network_image: [link](https://pub.dev/packages/cached_network_image)
 
-This project is a starting point for a Flutter application.
+- introduction_screen: [link](https://pub.dev/packages/introduction_screen)
 
-A few resources to get you started if this is your first Flutter project:
+**Fonts**
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- Poppins [link](https://fonts.google.com/specimen/Poppins)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+**UI Credit**
+
+- Design by: Lakhdar Ghazali
+
+### Covid-19 App Final UI
