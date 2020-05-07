@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:introduction_screen/introduction_screen.dart';
 
-import '../home.dart';
+import 'home_screen.dart';
+
 
 class OnboardingScreen extends StatefulWidget {
   @override
@@ -19,31 +20,34 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
 
    Widget _buildImage(String assetName) {
     return Align(
-      child: Image.asset('assets/$assetName.png', width: 350.0),
+      child: Image.asset('assets/$assetName.png',height: 250.0, width: 300.0),
       alignment: Alignment.bottomCenter,
+    
     );
   }
   @override
   Widget build(BuildContext context) {
 
-    const bodyStyle = TextStyle(fontSize: 19.0);
+    const bodyStyle = TextStyle(fontSize: 18.0,color: Colors.white);
     const pageDecoration = const PageDecoration(
-      titleTextStyle: TextStyle(fontSize: 28.0, fontWeight: FontWeight.w700),
+      titleTextStyle: TextStyle(fontSize: 28.0, fontWeight: FontWeight.w700,color: Colors.white),
       bodyTextStyle: bodyStyle,
+      
       descriptionPadding: EdgeInsets.fromLTRB(16.0, 0.0, 16.0, 16.0),
-      pageColor: Colors.white,
+      pageColor: Colors.blueAccent,
       imagePadding: EdgeInsets.zero,
     );
 
 
-    return 
-  IntroductionScreen(
+    return Scaffold(
+      body:IntroductionScreen(
       key: introKey,
+      
       pages: [
         PageViewModel(
-          title: "Fractional shares",
+          title: "Personal trainers",
           body:
-              "Instead of having to buy an entire share, invest any amount you want.",
+              "Personalized \n Workout Routine",
           image: _buildImage('screen1'),
           decoration: pageDecoration,
         ),
@@ -88,11 +92,14 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
         size: Size(10.0, 10.0),
         color: Color(0xFFBDBDBD),
         activeSize: Size(22.0, 10.0),
+        activeColor: Colors.deepOrangeAccent,
         activeShape: RoundedRectangleBorder(
           borderRadius: BorderRadius.all(Radius.circular(25.0)),
         ),
       ),
-    );
+    )
+    )
+  ;
 
 
 
