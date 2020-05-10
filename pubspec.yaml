@@ -25,6 +25,14 @@ dependencies:
   cupertino_icons: ^0.1.2
   cached_network_image: ^2.2.0+1
   introduction_screen: ^1.0.8
+  sleek_circular_slider: ^1.1.0
+  rounded_loading_button: ^1.0.0
+  audioplayers: ^0.15.1
+  animated_text_kit: ^2.0.1
+
+  
+
+
   
   http: ^0.12.1
 

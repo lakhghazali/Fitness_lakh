@@ -6,6 +6,13 @@
 
 - introduction_screen: [link](https://pub.dev/packages/introduction_screen)
 
+- sleek_circular_slider: [link](https://pub.dev/packages/sleek_circular_slider)
+
+- rounded_loading_button: [link](https://pub.dev/packages/rounded_loading_button)
+
+- animated_text_kit: [link](https://pub.dev/packages/animated_text_kit)
+
+
 **Fonts**
 
 - Poppins [link](https://fonts.google.com/specimen/Poppins)
@@ -14,4 +21,12 @@
 
 - Design by: Lakhdar Ghazali
 
-### Covid-19 App Final UI
+### Fitness App Final UI
+![](assets/screenApp/homeScreen.jpg)
+![](assets/screenApp/startScreen.jpg)
+![](assets/screenApp/loadingScreen.jpg)
+![](assets/screenApp/doneScreen.jpg)
+![](assets/screenApp/exerciseScreen.jpg)
+![](assets/screenApp/completedScreen.jpg)
+
+

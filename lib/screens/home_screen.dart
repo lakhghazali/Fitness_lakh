@@ -5,6 +5,8 @@ import 'package:fitness_lakh/screens/hub_json.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
+import 'exercise_screen.dart';
+
 class HomePage extends StatefulWidget {
   @override
   _HomePageState createState() => _HomePageState();
@@ -56,60 +58,64 @@ class _HomePageState extends State<HomePage> {
          children:exerciseHub.exercises.map((value)=>
          InkWell(
            onTap: (){
-
+                       Navigator.of(context).push(
+                           MaterialPageRoute(builder: (context) => ExerciceScreen(exercises:value)));
            },
-           child: Container(
-             margin: EdgeInsets.all(15.0),
-           
-             child:Stack(
-               children: <Widget>[
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(16),
-                                      child: CachedNetworkImage(
-                     imageUrl: value.thumbnail,
-                                  placeholder: (context, url) => Image(
-                                    image: AssetImage("assets/placeholder.jpg"),
+           child: Hero(
+             tag: value.id,
+                        child: Container(
+               margin: EdgeInsets.all(15.0),
+             
+               child:Stack(
+                 children: <Widget>[
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(16),
+                                        child: CachedNetworkImage(
+                       imageUrl: value.thumbnail,
+                                    placeholder: (context, url) => Image(
+                                      image: AssetImage("assets/placeholder.jpg"),
+                                      fit: BoxFit.cover,
+                                      height: 250,
+                                      width: MediaQuery.of(context).size.width,
+                                    ),
+                                    errorWidget: (context, url, error) =>
+                                        Icon(Icons.error),
                                     fit: BoxFit.cover,
                                     height: 250,
                                     width: MediaQuery.of(context).size.width,
-                                  ),
-                                  errorWidget: (context, url, error) =>
-                                      Icon(Icons.error),
-                                  fit: BoxFit.cover,
-                                  height: 250,
-                                  width: MediaQuery.of(context).size.width,
-                                  
+                                    
+                        
+                        ),
                       
-                      ),
-                    
-                  ),
-                    ClipRRect(
-                              borderRadius: BorderRadius.circular(16),
-                              child: Container(
-                                width: MediaQuery.of(context).size.width,
-                                height: 250,
-                                decoration: BoxDecoration(
-                                    gradient: LinearGradient(
-                                  colors: [
-                                    Color(0xFF000000),
-                                    Color(0x00000000),
-                                  ],
-                                  begin: Alignment.topLeft,
-                                  end: Alignment.centerLeft,
-                                )),
+                    ),
+                      ClipRRect(
+                                borderRadius: BorderRadius.circular(16),
+                                child: Container(
+                                  width: MediaQuery.of(context).size.width,
+                                  height: 250,
+                                  decoration: BoxDecoration(
+                                      gradient: LinearGradient(
+                                    colors: [
+                                      Color(0xFF000000),
+                                      Color(0x00000000),
+                                    ],
+                                    begin: Alignment.topLeft,
+                                    end: Alignment.centerLeft,
+                                  )),
+                                ),
                               ),
-                            ),
-                  Container(
-                    padding: EdgeInsets.all(15.0),
-                    
-                    alignment: Alignment.bottomLeft,
-                    child:Text(value.title,style:TextStyle(
-                      color:Colors.white,
-                      fontSize: 15.0,
-                    ),)
-                  )
-               ],
-             )
+                    Container(
+                      padding: EdgeInsets.all(15.0),
+                      
+                      alignment: Alignment.bottomLeft,
+                      child:Text(value.title,style:TextStyle(
+                        color:Colors.white,
+                        fontSize: 15.0,
+                      ),)
+                    )
+                 ],
+               )
+             ),
            ),
          )
          ).toList()
