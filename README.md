@@ -21,20 +21,24 @@
 
 - Design by: Lakhdar Ghazali
 
-### Fitness App Final UI
+### Fitness App UI
 
 ## Screenshots
- HomePage              |  Transfer money page 
+
+ Home Page              |  Start Exercise Page 
 :-------------------------:|:-------------------------:
-![]![](assets/screenApp/homeScreen.jpg?raw=true)|![](assets/screenApp/homeScreen.jpg?raw=true)
+![](assets/screenApp/homeScreen.jpg?raw=true)|![](assets/screenApp/startScreen.jpg?raw=true)
+
+ Loading Page              |  Loading Page 
+:-------------------------:|:-------------------------:
+![]![](assets/screenApp/loadingScreen.jpg?raw=true)|![](assets/screenApp/doneScreen.jpg?raw=true)
+
+ Exercise detail Page              |  Exercise detail Page 
+:-------------------------:|:-------------------------:
+![]![](assets/screenApp/exerciseScreen.jpg?raw=true)|![](assets/screenApp/completedScreen.jpg?raw=true)
 
 
 
-![](assets/screenApp/homeScreen.jpg)
-![](assets/screenApp/startScreen.jpg)
-![](assets/screenApp/loadingScreen.jpg)
-![](assets/screenApp/doneScreen.jpg)
-![](assets/screenApp/exerciseScreen.jpg)
-![](assets/screenApp/completedScreen.jpg)
+
 
 
