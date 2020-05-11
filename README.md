@@ -22,6 +22,14 @@
 - Design by: Lakhdar Ghazali
 
 ### Fitness App Final UI
+
+## Screenshots
+ HomePage              |  Transfer money page 
+:-------------------------:|:-------------------------:
+![]![](assets/screenApp/homeScreen.jpg?raw=true)|![](assets/screenApp/homeScreen.jpg?raw=true)
+
+
+
 ![](assets/screenApp/homeScreen.jpg)
 ![](assets/screenApp/startScreen.jpg)
 ![](assets/screenApp/loadingScreen.jpg)
