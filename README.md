@@ -31,11 +31,11 @@
 
  Loading Page              |  Loading Page 
 :-------------------------:|:-------------------------:
-![]![](assets/screenApp/loadingScreen.jpg?raw=true)|![](assets/screenApp/doneScreen.jpg?raw=true)
+![](assets/screenApp/loadingScreen.jpg?raw=true)|![](assets/screenApp/doneScreen.jpg?raw=true)
 
- Exercise detail Page              |  Exercise detail Page 
+ Exercise Detail Page              |  Exercise Detail Page 
 :-------------------------:|:-------------------------:
-![]![](assets/screenApp/exerciseScreen.jpg?raw=true)|![](assets/screenApp/completedScreen.jpg?raw=true)
+![](assets/screenApp/exerciseScreen.jpg?raw=true)|![](assets/screenApp/completedScreen.jpg?raw=true)
 
 
 
